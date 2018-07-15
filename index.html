@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<style>
+  
+
+	#container {
+		padding:20px;
+	}
+	#header {
+		position:fixed;
+		top:0px;
+		
+	}
+	#nav-bar {
+		position:fixed;
+		width:100%;
+		height:30px;
+		top:0px;
+	}
+	.nav-link {
+		position: inline-block;
+		float:right;
+		width:20%;
+		text-align:center;
+		color:black;
+	}
+	#header-img {
+		width:300px;
+		height:auto;
+	}
+	#video {
+		padding-top:80px;
+		display:block;
+		margin:auto;
+	}
+	#form {
+		width:50%;
+		display:block;
+		margin:auto;
+	}
+	#contact-us {
+		padding-top:80px;
+		text-align:center;
+	}
+	label 	{
+		padding-right:20px;
+		float:center;
+	}
+	@media (max-width:350px) {
+		#header-img {
+			width:180px;
+		}
+	}
+	#pricing, #how {
+		padding-top:50px;
+		width:50%;
+		display:block;
+		margin:auto;
+	}
+	
+	#prices {
+		display:flex;
+		flex-direction:row;
+	}
+	#box-1 {
+    
+		width: 33%;
+   
+		height: 200px;
+ 
+		border: 1px solid black;
+		margin-right:25px;
+		text-align:center;
+	}
+
+  
+	#box-2 {
+    
+		width: 33%;
+   	
+		height: 200px;
+  
+		border: 1px solid black;
+		margin-right:25px;
+		text-align:center;
+	}
+	#box-3 {
+    
+		width: 33%;
+   	
+		height: 200px;
+  
+		border: 1px solid black;
+		text-align:center;
+	}
+	ul {
+		list-style-type: none;
+	}
+</style>
+
+<html>
+<head>
+
+<title>Landing Page</title>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+
+<div id="container">
+	<header id="header" width="100%">
+		<div class="menu">
+			
+			<nav id="nav-bar">
+				<img id="header-img" src="./images/original_trombones.png"/>
+				<a href="#pricing" class="nav-link">Pricing</a> 
+				<a href="#how" class="nav-link">How it works</a> 
+				<a href="#contact-us" class="nav-link">Features</a>
+			</nav>
+		</div>
+	</header>
+</div>
+<div id="how">
+	<ul class="trumpet">
+		<li><h2>Premium Materials</h2><br>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.
+		</li>
+		<li><h2>Fast Shipping</h2><br>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.
+		</li>
+		<li><h2>Quality Assurance</h2><br>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.
+		</li>
+	</ul>
+</div>
+<div>
+	<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+<div id="contact-us">
+	<h1>Handcrafted, home-made masterpieces</h1>
+	<form id="form" action="https://www.freecodecamp.com/email-submit">
+		
+		<label>*Email</label><input type="email" id="email" name="email" placeholder="Enter your email here" required></input><br><br>
+		<input type="submit" id="submit" value="More Information"></input>
+	</form>
+</div>
+<div id="pricing">
+	<div id="prices">
+		<div id="box-1">
+			<h2>TENOR TROMBONE</h2>
+			$600
+Lorem ipsum.
+Lorem ipsum.
+Lorem ipsum dolor.
+Lorem ipsum.
+		</div>
+		<div id="box-2">
+			<h2>BASS TROMBONE</h2>
+			$900
+Lorem ipsum.
+Lorem ipsum.
+Lorem ipsum dolor.
+Lorem ipsum.
+		</div>
+		<div id="box-3">
+			<h2>TREBLE TROMBONE</h2>
+$1200
+Lorem ipsum.
+Lorem ipsum.
+Lorem ipsum dolor.
+Lorem ipsum.
+		</div>
+	</div>
+</div>
+</body>
+
+</html>
